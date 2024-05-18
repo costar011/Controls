@@ -1,0 +1,19 @@
+.md-textbox {
+    position: relative;
+}
+
+.md-textbox:is(label, span) {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    pointer-events: none;
+
+    color: #888888;
+    transition: 0.3s;
+}
+
+.md-textbox > label {
+    left: 10px;
+    translate: 0 -50%;
+    padding: 4px 8px;
+}
